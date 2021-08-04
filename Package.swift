@@ -16,6 +16,16 @@ let package = Package(
 			name: "UUSwiftUX",
 			targets: ["UUSwiftUX"]),
 	],
+
+	dependencies: [
+		// Here we define our package's external dependencies
+		// and from where they can be fetched:
+		.package(
+			url: "https://github.com/SilverPineSoftware/UUSwiftCore.git",
+			from: "1.0.2"
+		)
+	],
+
 	targets: [
 		.target(
 			name: "UUSwiftUX",
