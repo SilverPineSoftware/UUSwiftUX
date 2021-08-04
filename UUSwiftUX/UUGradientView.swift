@@ -10,6 +10,7 @@
 #if os(iOS)
 
 import UIKit
+import UUSwiftCore
 
 public enum UUGradientDirection : Int
 {

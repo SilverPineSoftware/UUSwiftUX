@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		C574960126BB2CEA00CECCC0 /* UUView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57495FA26BB2CEA00CECCC0 /* UUView.swift */; };
 		C574960226BB2CEA00CECCC0 /* UUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57495FB26BB2CEA00CECCC0 /* UUViewController.swift */; };
 		C574960326BB2CEA00CECCC0 /* UUTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57495FC26BB2CEA00CECCC0 /* UUTextField.swift */; };
+		C574963426BB602200CECCC0 /* UUSwiftCore in Frameworks */ = {isa = PBXBuildFile; productRef = C574963326BB602200CECCC0 /* UUSwiftCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C574963426BB602200CECCC0 /* UUSwiftCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +111,9 @@
 			dependencies = (
 			);
 			name = UUSwiftUX;
+			packageProductDependencies = (
+				C574963326BB602200CECCC0 /* UUSwiftCore */,
+			);
 			productName = UUSwiftUX;
 			productReference = C57495EB26BB2C5300CECCC0 /* UUSwiftUX.framework */;
 			productType = "com.apple.product-type.framework";
@@ -136,6 +141,9 @@
 				Base,
 			);
 			mainGroup = C57495E126BB2C5200CECCC0;
+			packageReferences = (
+				C574963226BB602200CECCC0 /* XCRemoteSwiftPackageReference "UUSwiftCore" */,
+			);
 			productRefGroup = C57495EC26BB2C5300CECCC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C574963226BB602200CECCC0 /* XCRemoteSwiftPackageReference "UUSwiftCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SilverPineSoftware/UUSwiftCore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C574963326BB602200CECCC0 /* UUSwiftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C574963226BB602200CECCC0 /* XCRemoteSwiftPackageReference "UUSwiftCore" */;
+			productName = UUSwiftCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C57495E226BB2C5200CECCC0 /* Project object */;
 }

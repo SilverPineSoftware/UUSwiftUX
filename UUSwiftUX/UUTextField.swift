@@ -10,6 +10,7 @@
 #if os(iOS)
 
 import UIKit
+import UUSwiftCore
 
 @IBDesignable class UUTextField: UITextField
 {

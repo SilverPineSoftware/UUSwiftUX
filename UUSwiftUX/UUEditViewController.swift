@@ -16,6 +16,7 @@
 #if os(iOS)
 
 import UIKit
+import UUSwiftCore
 
 open class UUEditViewController : UIViewController
 {
