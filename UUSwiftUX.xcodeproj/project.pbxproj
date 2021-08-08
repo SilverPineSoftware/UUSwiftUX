@@ -31,7 +31,6 @@
 		C57495FA26BB2CEA00CECCC0 /* UUView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUView.swift; sourceTree = "<group>"; };
 		C57495FB26BB2CEA00CECCC0 /* UUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUViewController.swift; sourceTree = "<group>"; };
 		C57495FC26BB2CEA00CECCC0 /* UUTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUTextField.swift; sourceTree = "<group>"; };
-		C574960426BB2CF800CECCC0 /* UUSwiftCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UUSwiftCore.podspec; sourceTree = "<group>"; };
 		C574960526BB2CF800CECCC0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C574960626BB2CF800CECCC0 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C574960726BB2CF800CECCC0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -57,7 +56,6 @@
 				C574960726BB2CF800CECCC0 /* LICENSE */,
 				C574960626BB2CF800CECCC0 /* Package.swift */,
 				C574960526BB2CF800CECCC0 /* README.md */,
-				C574960426BB2CF800CECCC0 /* UUSwiftCore.podspec */,
 				C57495ED26BB2C5300CECCC0 /* UUSwiftUX */,
 				C57495EC26BB2C5300CECCC0 /* Products */,
 			);
