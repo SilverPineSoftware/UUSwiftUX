@@ -18,6 +18,7 @@
 		C574963426BB602200CECCC0 /* UUSwiftCore in Frameworks */ = {isa = PBXBuildFile; productRef = C574963326BB602200CECCC0 /* UUSwiftCore */; };
 		C574963C26BB650A00CECCC0 /* UUMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574963A26BB650A00CECCC0 /* UUMapView.swift */; };
 		C574963D26BB650A00CECCC0 /* UUStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574963B26BB650A00CECCC0 /* UUStyling.swift */; };
+		C5A19D9D26DC40540005D090 /* UUSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A19D9C26DC40540005D090 /* UUSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C574960726BB2CF800CECCC0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C574963A26BB650A00CECCC0 /* UUMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUMapView.swift; sourceTree = "<group>"; };
 		C574963B26BB650A00CECCC0 /* UUStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUStyling.swift; sourceTree = "<group>"; };
+		C5A19D9C26DC40540005D090 /* UUSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				C57495F626BB2CEA00CECCC0 /* UUGradientView.swift */,
 				C574963A26BB650A00CECCC0 /* UUMapView.swift */,
 				C574963B26BB650A00CECCC0 /* UUStyling.swift */,
+				C5A19D9C26DC40540005D090 /* UUSwitch.swift */,
 				C57495FC26BB2CEA00CECCC0 /* UUTextField.swift */,
 				C57495FA26BB2CEA00CECCC0 /* UUView.swift */,
 				C57495FB26BB2CEA00CECCC0 /* UUViewController.swift */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C574960226BB2CEA00CECCC0 /* UUViewController.swift in Sources */,
+				C5A19D9D26DC40540005D090 /* UUSwitch.swift in Sources */,
 				C574960026BB2CEA00CECCC0 /* UUEditViewController.swift in Sources */,
 				C574960126BB2CEA00CECCC0 /* UUView.swift in Sources */,
 				C57495FD26BB2CEA00CECCC0 /* UUGradientView.swift in Sources */,
