@@ -90,6 +90,16 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
 {
     class Configuration : NSObject
     {
+        init(forceCapitalization : Bool = false, autoDismissKeyboard : Bool = true, maximumTextLength : Int? = nil, dismissKeyboardWhenComplete : Bool = true, allowedCharacterSet : CharacterSet? = nil)
+        {
+            super.init()
+            self.forceCapitalization = forceCapitalization
+            self.autoDismissKeyboard = autoDismissKeyboard
+            self.allowedCharacterSet = allowedCharacterSet
+            self.maxiumumTextLength = maximumTextLength
+            self.dismissKeyboardWhenComplete = dismissKeyboardWhenComplete
+        }
+        
         var allowedCharacterSet : CharacterSet? = nil
         var forceCapitalization = false
         var autoDismissKeyboard = true
