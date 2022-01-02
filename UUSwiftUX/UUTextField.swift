@@ -90,7 +90,7 @@ public class UUTextFieldDelegate : NSObject, UITextFieldDelegate
 {
     public class Configuration : NSObject
     {
-        init(forceCapitalization : Bool = false, autoDismissKeyboard : Bool = true, maximumTextLength : Int? = nil, dismissKeyboardWhenComplete : Bool = true, allowedCharacterSet : CharacterSet? = nil)
+        public init(forceCapitalization : Bool = false, autoDismissKeyboard : Bool = true, maximumTextLength : Int? = nil, dismissKeyboardWhenComplete : Bool = true, allowedCharacterSet : CharacterSet? = nil)
         {
             super.init()
             self.forceCapitalization = forceCapitalization
