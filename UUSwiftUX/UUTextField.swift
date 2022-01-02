@@ -78,7 +78,7 @@ import UUSwiftCore
 
 extension UITextField
 {
-    func uuSetPlaceholderColor(_ color : UIColor)
+    public func uuSetPlaceholderColor(_ color : UIColor)
     {
         self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [.foregroundColor : color])
     }
@@ -86,9 +86,9 @@ extension UITextField
 
 
 
-class UUTextFieldDelegate : NSObject, UITextFieldDelegate
+public class UUTextFieldDelegate : NSObject, UITextFieldDelegate
 {
-    class Configuration : NSObject
+    public class Configuration : NSObject
     {
         init(forceCapitalization : Bool = false, autoDismissKeyboard : Bool = true, maximumTextLength : Int? = nil, dismissKeyboardWhenComplete : Bool = true, allowedCharacterSet : CharacterSet? = nil)
         {
@@ -100,35 +100,35 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
             self.dismissKeyboardWhenComplete = dismissKeyboardWhenComplete
         }
         
-        var allowedCharacterSet : CharacterSet? = nil
-        var forceCapitalization = false
-        var autoDismissKeyboard = true
-        var maxiumumTextLength : Int? = nil
-        var dismissKeyboardWhenComplete = true
+        public var allowedCharacterSet : CharacterSet? = nil
+        public var forceCapitalization = false
+        public var autoDismissKeyboard = true
+        public var maxiumumTextLength : Int? = nil
+        public var dismissKeyboardWhenComplete = true
     }
     
-    var configuration : UUTextFieldDelegate.Configuration = Configuration()
+    public var configuration : UUTextFieldDelegate.Configuration = Configuration()
     
-    convenience init(configuration : UUTextFieldDelegate.Configuration)
+    public convenience init(configuration : UUTextFieldDelegate.Configuration)
     {
         self.init()
         self.configuration = configuration
     }
     
-    convenience init(textFields : [UITextField], configuration : UUTextFieldDelegate.Configuration)
+    public convenience init(textFields : [UITextField], configuration : UUTextFieldDelegate.Configuration)
     {
         self.init()
         self.configuration = configuration
         self.addManagedTextFields(textFields)
     }
     
-    convenience init(textFields : [UITextField])
+    public convenience init(textFields : [UITextField])
     {
         self.init()
         self.addManagedTextFields(textFields)
     }
     
-    func addManagedTextFields(_ textFields : [UITextField])
+    public func addManagedTextFields(_ textFields : [UITextField])
     {
         for textField in textFields
         {
@@ -139,7 +139,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         self.fields = textFields
     }
     
-    func allFieldsHaveText() -> Bool
+    public func allFieldsHaveText() -> Bool
     {
         var allComplete = true
         for textField in self.fields
@@ -168,7 +168,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         }
     }
     
-    func advanceToNextField()
+    public func advanceToNextField()
     {
         if let textField = self.firstResponder,
            let index = self.fields.firstIndex(of: textField)
@@ -185,7 +185,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         }
     }
     
-    func resignFirstResponder()
+    public func resignFirstResponder()
     {
         for field in self.fields
         {
@@ -193,7 +193,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         }
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         // If all the fields have text in them and we are set to dismiss when all complete...
         if self.configuration.dismissKeyboardWhenComplete && self.allFieldsHaveText()
@@ -214,7 +214,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         return false
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
         if let text = textField.text,
            let stringRange = Range(range, in:  text),
@@ -227,7 +227,7 @@ class UUTextFieldDelegate : NSObject, UITextFieldDelegate
         return true
     }
     
-    @objc func textFieldChanged(_ textField: UITextField)
+    @objc public func textFieldChanged(_ textField: UITextField)
     {
         if let rawString = textField.text
         {
