@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081768E928208E1000A56BFA /* UULinkTapGestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081768E828208E1000A56BFA /* UULinkTapGestureHandler.swift */; };
 		C57495F026BB2C5300CECCC0 /* UUSwiftUX.h in Headers */ = {isa = PBXBuildFile; fileRef = C57495EE26BB2C5300CECCC0 /* UUSwiftUX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C57495FD26BB2CEA00CECCC0 /* UUGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57495F626BB2CEA00CECCC0 /* UUGradientView.swift */; };
 		C57495FE26BB2CEA00CECCC0 /* UUCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57495F726BB2CEA00CECCC0 /* UUCircularView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081768E828208E1000A56BFA /* UULinkTapGestureHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UULinkTapGestureHandler.swift; sourceTree = "<group>"; };
 		C57495EB26BB2C5300CECCC0 /* UUSwiftUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UUSwiftUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57495EE26BB2C5300CECCC0 /* UUSwiftUX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UUSwiftUX.h; sourceTree = "<group>"; };
 		C57495EF26BB2C5300CECCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		C57495ED26BB2C5300CECCC0 /* UUSwiftUX */ = {
 			isa = PBXGroup;
 			children = (
+				081768E828208E1000A56BFA /* UULinkTapGestureHandler.swift */,
 				C57495F826BB2CEA00CECCC0 /* UUCircularImageView.swift */,
 				C57495F726BB2CEA00CECCC0 /* UUCircularView.swift */,
 				C57495F926BB2CEA00CECCC0 /* UUEditViewController.swift */,
@@ -180,6 +183,7 @@
 				C574960026BB2CEA00CECCC0 /* UUEditViewController.swift in Sources */,
 				C574960126BB2CEA00CECCC0 /* UUView.swift in Sources */,
 				C57495FD26BB2CEA00CECCC0 /* UUGradientView.swift in Sources */,
+				081768E928208E1000A56BFA /* UULinkTapGestureHandler.swift in Sources */,
 				C57495FF26BB2CEA00CECCC0 /* UUCircularImageView.swift in Sources */,
 				C574963C26BB650A00CECCC0 /* UUMapView.swift in Sources */,
 				C574960326BB2CEA00CECCC0 /* UUTextField.swift in Sources */,
