@@ -45,7 +45,7 @@ public class UULinkTapGestureHandler: NSObject
     private(set) var actions: [String:(()->())] = [:]
     private(set) var defaultAction: (()->())? = nil
         
-    required init(_ view: UITextView)
+    public required init(_ view: UITextView)
     {
         super.init()
         
@@ -53,17 +53,17 @@ public class UULinkTapGestureHandler: NSObject
         view.addGestureRecognizer(gestureRecognizer)
     }
     
-    func addAction(_ text: String, _ action: @escaping (()->()))
+    public func addAction(_ text: String, _ action: @escaping (()->()))
     {
         actions[text] = action
     }
     
-    func reset()
+    public func reset()
     {
         actions.removeAll()
     }
     
-    func setupDefaultAction(_ action: (()->())?)
+    public func setupDefaultAction(_ action: (()->())?)
     {
         self.defaultAction = action
     }
