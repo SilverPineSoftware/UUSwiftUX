@@ -30,7 +30,7 @@ let package = Package(
 			path: "UUSwiftUX",
 			exclude: ["Info.plist"])
 	],
-	swiftLanguageVersions: [
+    swiftLanguageModes: [
 		.v4_2,
 		.v5,
         .v6

@@ -1,16 +1,15 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "UUSwiftCore",
-        "repositoryURL": "https://github.com/SilverPineSoftware/UUSwiftCore.git",
-        "state": {
-          "branch": null,
-          "revision": "4cd3f86e1337a451f6f2ea9dcdc6f8a0739d9428",
-          "version": "1.3.0"
-        }
+  "originHash" : "5f69d1f1770d2d878f65c8bbf32f0ac28c107fb35cabbb62121a741b36899b27",
+  "pins" : [
+    {
+      "identity" : "uuswiftcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SilverPineSoftware/UUSwiftCore.git",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "f1e6363e7c09eefbac8062a779f3aed3b58482d0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }

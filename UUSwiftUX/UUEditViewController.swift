@@ -52,6 +52,7 @@ open class UUEditViewController : UIViewController
         return view
     }
     
+    /*
     func registerNotificationHandlers()
     {
 		NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil, using: handleKeyboardWillShowNotification)
@@ -60,6 +61,40 @@ open class UUEditViewController : UIViewController
 		NotificationCenter.default.addObserver(forName: UITextField.textDidBeginEditingNotification, object: nil, queue: nil, using: handleEditingStarted)
 		NotificationCenter.default.addObserver(forName: UITextView.textDidEndEditingNotification, object: nil, queue: nil, using: handleEditingEnded)
 		NotificationCenter.default.addObserver(forName: UITextField.textDidEndEditingNotification, object: nil, queue: nil, using: handleEditingEnded)
+    }*/
+    
+    func registerNotificationHandlers()
+    {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleKeyboardWillShowNotification(_:)),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleKeyboardWillHideNotification(_:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleEditingStarted(_:)),
+            name: UITextView.textDidBeginEditingNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleEditingStarted(_:)),
+            name: UITextField.textDidBeginEditingNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleEditingEnded(_:)),
+            name: UITextView.textDidEndEditingNotification,
+            object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleEditingEnded(_:)),
+            name: UITextField.textDidEndEditingNotification,
+            object: nil)
     }
     
     func clearNotificationHandlers()

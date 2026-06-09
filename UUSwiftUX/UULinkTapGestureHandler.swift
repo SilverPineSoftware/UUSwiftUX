@@ -40,6 +40,8 @@ import UIKit
  ```
  
  */
+
+@MainActor
 public class UULinkTapGestureHandler: NSObject
 {
     private(set) var actions: [String:(()->())] = [:]
